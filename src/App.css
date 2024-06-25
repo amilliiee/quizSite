@@ -29,3 +29,30 @@
 .small {
   font-size: 0.75rem;
 }
+
+.nav-link {
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+.card-style {
+  height: 200px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cardBody-style {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.buttonContainer-style {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}

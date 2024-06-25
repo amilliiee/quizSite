@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node"
-  }
+    "moduleResolution": "node",
+    "allowJs": true,
+    "jsx": "react"
+  },
+  "include": [
+    "./**/*"
+  ]
 }
