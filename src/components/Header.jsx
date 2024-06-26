@@ -6,6 +6,10 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
+    const navStyle = {
+        backgroundColor: '#636fd4'
+    }
+
     return (
         <Navbar dark color='primary' expand='md'>
             <NavbarToggler onClick={toggle} />
