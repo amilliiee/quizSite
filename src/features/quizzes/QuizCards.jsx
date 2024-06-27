@@ -16,7 +16,7 @@ const QuizCards = () => {
                                     <CardText>{quiz.description}</CardText>
                                 </div>
                                 <div className='buttonContainer-style'>
-                                    <Button href={`/quiz/${quiz.id}`}>Start Quiz</Button>
+                                    <Button href={`/${quiz.id}`}>Start Quiz</Button>
                                 </div>
                             </CardBody>
                         </Card>
