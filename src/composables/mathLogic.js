@@ -10,6 +10,10 @@ export const generateQuestion = () => {
     // Prompt user to choose operation
     op = prompt('Choose an operation: +, -, *, or /');
 
+    if (op === null) {
+        return null;
+    }
+
     // Validate user input - if invalid, ask again
     const validOps = ['+', '-', '*', '/'];
     while (!validOps.includes(op)) {
