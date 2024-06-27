@@ -21,7 +21,7 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/quiz/math" className='nav-link'>
+                        <NavLink to="/math" className='nav-link'>
                             <i className='fa fa-solid fa-calculator' /> Math
                         </NavLink>
                     </NavItem>

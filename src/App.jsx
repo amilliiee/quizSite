@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/quiz/math' element={<MathQuiz />} />
+        <Route path='/math' element={<MathQuiz />} />
         {/* <Route path='/quiz/:id' element={<ChemQuiz />} /> */}
       </Routes>
     </div>
