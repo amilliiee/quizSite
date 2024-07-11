@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button, Container, Input } from "reactstrap";
-import { checkAnswer, generateQuestion, questionNumber, scoreAmount } from "../composables/mathLogic";
+import { checkAnswer, genMathQuestion, questionNumber, scoreAmount } from "../composables/mathLogic";
 
 const MathQuiz = () => {
     const [score, setScore] = useState(scoreAmount);
@@ -10,7 +10,7 @@ const MathQuiz = () => {
     const [pageRendered, setPageRendered] = useState(false);
 
     const promptUser = () => {
-        const newQ = generateQuestion();
+        const newQ = genMathQuestion();
         if (newQ) {
             setQuestion(newQ);
         } else {
@@ -50,7 +50,7 @@ const MathQuiz = () => {
         setQuestion('');
         setEndGame(false);
         setPageRendered(false);
-        setTimeout(() => setPageRendered(true), 0)
+        setTimeout(() => setPageRendered(true), 0); // ensures restart button works
     }
 
     return (

@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import MathQuiz from './pages/MathQuiz';
+import ChemQuiz from './pages/ChemQuiz';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/math' element={<MathQuiz />} />
-        {/* <Route path='/quiz/:id' element={<ChemQuiz />} /> */}
+        <Route path='/chemistry' element={<ChemQuiz />} />
       </Routes>
     </div>
   );

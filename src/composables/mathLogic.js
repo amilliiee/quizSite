@@ -3,7 +3,7 @@ export let questionNumber = 1;
 export let correctAnswer = '';
 let op= '';
 
-export const generateQuestion = () => {
+export const genMathQuestion = () => {
     let num1 = Math.floor(Math.random() * 10) + 1;
     let num2 = Math.floor(Math.random() * 10) + 1;
 
@@ -18,7 +18,7 @@ export const generateQuestion = () => {
     const validOps = ['+', '-', '*', '/'];
     while (!validOps.includes(op)) {
         alert('Invalid operation. Please choose +, -, *, or /');
-        return generateQuestion();
+        return genMathQuestion();
     };
 
     if (op === '/') {

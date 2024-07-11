@@ -25,11 +25,11 @@ const Header = () => {
                             <i className='fa fa-solid fa-calculator' /> Math
                         </NavLink>
                     </NavItem>
-                    {/* <NavItem>
-                        <NavLink to="#" className='nav-link'>
+                    <NavItem>
+                        <NavLink to="/chemistry" className='nav-link'>
                             <i className='fa fa-solid fa-flask' /> Chemistry
                         </NavLink>
-                    </NavItem> */}
+                    </NavItem>
                 </Nav>
             </Collapse>
         </Navbar>

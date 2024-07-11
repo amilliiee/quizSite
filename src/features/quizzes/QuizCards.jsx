@@ -17,7 +17,7 @@ const QuizCards = () => {
                                     {!quiz.avail ? <CardText>* COMING SOON *</CardText> : (<></>)}
                                 </div>
                                 <div className='buttonContainer-style'>
-                                    <Button color='primary' href={`/${quiz.id}`}>Start Quiz</Button>
+                                    <Button color='primary' disabled={!quiz.avail} href={`/${quiz.id}`}>Start Quiz</Button>
                                 </div>
                             </CardBody>
                         </Card>
