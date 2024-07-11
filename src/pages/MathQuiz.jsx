@@ -20,15 +20,6 @@ const MathQuiz = () => {
     
     // Waits for page to render before asking the first question    
     useEffect(() => {
-        const promptUser = () => {
-            const newQ = generateQuestion();
-            if (newQ) {
-                setQuestion(newQ);
-            } else {
-                setEndGame(true); // End game if prompt was canceled
-            }
-        };
-
         if (!endGame && pageRendered) {
             promptUser();
         }
@@ -59,6 +50,7 @@ const MathQuiz = () => {
         setQuestion('');
         setEndGame(false);
         setPageRendered(false);
+        setTimeout(() => setPageRendered(true), 0)
     }
 
     return (
