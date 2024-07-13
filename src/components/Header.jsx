@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Collapse, Nav, Navbar, NavbarToggler, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { QUIZZES } from '../app/shared/QUIZZES';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);

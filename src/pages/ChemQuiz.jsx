@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button, Container, Input } from "reactstrap";
-import { genChemQuestion } from '../composables/chemLogic'
+//import { genChemQuestion } from '../composables/chemLogic'
+import ElemCard from "../features/quizzes/ElemCard";
 
 const ChemQuiz = () => {
     const endGame = false;
@@ -12,10 +13,10 @@ const ChemQuiz = () => {
                         <div className='questionPrompt h3 mt-4' id='questionPrompt'>Question # ?</div>
                         <div className='questionFormat-style'>
                             <div className='questionDiv questionDiv-style h6'>
-                                QUESTION
-                            </div>
-                            <div>
-                                CARD
+                                <div>
+                                    <p>What element is depicted below?</p>
+                                    <ElemCard />
+                                </div>
                             </div>
                             <div className='instructions h6 mt-2'>Capitalization does not matter.</div>
                             <Input type='text' id='textInput' className='mt-2 input-style' placeholder='Type your answer here' />

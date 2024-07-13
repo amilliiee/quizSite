@@ -8,7 +8,7 @@ export const QUIZZES = [
     {
         id: 'chemistry',
         name: 'Chemistry Quiz',
-        description: 'A quiz on the 27 most common elemts of the periodic table.',
-        avail: true
+        description: 'A quiz on the 27 most common elements of the periodic table.',
+        avail: false
     },
 ]

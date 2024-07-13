@@ -60,13 +60,15 @@
 
 .questionDiv-style {
   width: 20%;
-  height: 100px;
+  min-height: 200px;
   border: 2px solid #ccc;
   border-radius: 6px;
+  box-sizing: border-box;
   margin-bottom: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .questionFormat-style {
@@ -79,4 +81,33 @@
 .input-style {
   width: 20%;
   border: 2px solid #ccc;
+}
+
+.elem-card {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  padding: 2px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.elem-num {
+  font-size: 0.7em;
+}
+
+.elem-mass {
+  font-size: 0.7em;
+}
+
+.elem-symbol {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.elem-group {
+  font-size: 0.7em;
 }
