@@ -69,6 +69,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .questionFormat-style {
@@ -85,29 +86,54 @@
 
 .elem-card {
   width: 100%;
-  max-width: 100px;
+  max-width: 80px;
   height: auto;
   border: 1px solid #ddd;
   border-radius: 6px;
   text-align: center;
-  padding: 2px;
+  font-size: 0.8em;
   box-sizing: border-box;
-  margin-bottom: 8px;
+  margin: 0 auto 2px;
+  padding: 0;
+}
+
+.elem-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 6px 8px;
+}
+
+.elem-num-mass {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
 }
 
 .elem-num {
-  font-size: 0.7em;
+  font-size: 0.9em;
+  margin: 0;
 }
 
 .elem-mass {
-  font-size: 0.7em;
+  font-size: 0.9em;
+  margin: 0;
 }
 
 .elem-symbol {
-  font-size: 0.9em;
+  font-size: 1.4em;
   font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.elem-name {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 4px;
 }
 
 .elem-group {
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
+

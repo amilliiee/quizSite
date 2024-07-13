@@ -1,7 +1,7 @@
 import { Button, Card, CardBody, CardText, CardTitle, Col, Container, Row, } from "reactstrap";
 import "../../App.css";
 
-const ElemCard = ({ elem  = [0, 'H', 1.008, 1] }) => {
+const ElemCard = ({ elem  = [0, 'H', 1.008, 'Nonmetal'] }) => {
   const [num, symbol, mass, group] = elem;
 
   return (
@@ -9,14 +9,14 @@ const ElemCard = ({ elem  = [0, 'H', 1.008, 1] }) => {
       <Row>
         <Col>
           <Card className="elem-card">
-            <CardBody >
-              <div>
-                <CardText className="elem-num">Elem Num Elem mass</CardText>
-                <CardText className="elem-mass">Elem mass</CardText>
-                <CardText className="elem-symbol">Elem symbol</CardText>
-                <CardText className="elem-name">?</CardText>
-                <CardText className="elem-group">Elem Group</CardText>
+            <CardBody className="elem-card-body">
+              <div className="elem-num-mass">
+                <CardText className="elem-num">{num}</CardText>
+                <CardText className="elem-mass">{mass}</CardText>
               </div>
+              <CardTitle className="elem-symbol">{symbol}</CardTitle>
+              <CardText className="elem-name">?</CardText>
+              <CardText className="elem-group">{group}</CardText>
             </CardBody>
           </Card>
         </Col>
@@ -26,11 +26,3 @@ const ElemCard = ({ elem  = [0, 'H', 1.008, 1] }) => {
 };
 
 export default ElemCard;
-
-
-/*
-Number        Mass
-       Symbol
-       Name
-       Group
-*/

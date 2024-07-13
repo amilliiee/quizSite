@@ -12,8 +12,8 @@ const ChemQuiz = () => {
                     <>
                         <div className='questionPrompt h3 mt-4' id='questionPrompt'>Question # ?</div>
                         <div className='questionFormat-style'>
-                            <div className='questionDiv questionDiv-style h6'>
-                                <div>
+                            <div className='questionDiv-style h6'>
+                                <div className="chem-q">
                                     <p>What element is depicted below?</p>
                                     <ElemCard />
                                 </div>
