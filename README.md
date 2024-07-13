@@ -1,6 +1,6 @@
 # Title
 
-This quiz is a recreation of a group project that was completed during the first course of a full stack bootcamp with a few changes. The original quiz site was a basic HTML site, and the goal was to convert it into a React App.
+This quiz is a recreation of a group project that was completed during the first course of a full stack bootcamp with a few changes. The original quiz site was a basic HTML site, and the goal here was to convert it into a React App.
 
 # Available Scripts
 
